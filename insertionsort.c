@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void insertionsort(int* list, int cur_size){
-    //need to compare the current element to the elements before it
+    
     int i, j;  
     for (i=1; i< cur_size; i++ ){
         int cur_num = list[i];
@@ -11,8 +11,7 @@ void insertionsort(int* list, int cur_size){
             list[j+1] = list[j]; //
             j--;
         }
-        //now, the current number you are comparing should be inserted at this element + 1 
-        //because otherwise out of bounds
+        
         list[j+1] = cur_num;
     }
 }
