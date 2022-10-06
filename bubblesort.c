@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 void bubblesort(int* list, int cur_size){
-    //modify in list
-    //can through as many times needed
+
     int exit_condition = cur_size;
     while (exit_condition > 0){
         for (int i =0; i< cur_size - 1; i++){
